@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <!-- 
+
+        垂直外边距的重叠：
+            相邻的垂直方向外边距会发生重叠现象
+            - 兄弟元素
+                兄弟元素间的相邻垂直外边距会取俩者之间较大值
+                负数的话取绝对值的最大值
+            - 父子元素
+                父子相邻的外边距 子元素的会传递给父元素（上外边距）
+                父子外边距的重叠会影响页面布局 必须处理
+                
+
+        行内元素的盒子模型
+            - 行内元素不支持设置宽高度
+            - 可以设置padding 但是垂直方向的padding不会影响页面的布局
+            - 可以设置border 垂直方向的border不会影响页面的布局
+            - 可以设置margin 垂直方向的margin不会影响页面的布局
+            
+        display 用来设置元素显示的类型 
+            - inline -- 将元素设置成行内元素
+            - block  -- 将元素设置成块元素
+            - inline-block -- 将元素设置成行内块元素
+                行内块元素可以设置宽高 不会独占一行
+            - table  -- 将元素设置成表格
+            - none   -- 元素不在页面中显示
+        
+
+        visibility 用来设置元素显示状态
+            visible -- 默认值  元素在页面中正常显示
+            hidden  -- 隐藏    元素在页面中不显示，但是依然占据着页面的位置
+
+
+        浏览器中的默认样式：
+            浏览器都会为元素设置一些默认样式
+            它的存在会影响页面的布局，通常情况下编写网页的时候必须要去除默认样式（pc端的样式）
+
+        盒子大小：
+            box-sizing -- 设置盒子尺寸的计算方式（设置width和height）
+                content-box -- 默认值 宽度和高度用来设置内容区的大小
+                border-box  -- 宽度和高度用来设置整个盒子的可见框大小
+                        盒子的宽度和高度指的是内容区 内边距 边框的总大小
+                        相当于会自动调节内容去的空间 
+     -->
+</body>
+</html>

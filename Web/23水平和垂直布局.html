@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 0 auto;
+        }
+
+        /*
+            水平方向布局：
+                元素在父元素中水平方向的位置由一下属性共同决定
+                    margin-left
+                    border-left
+                    padding-left
+                    width
+                    padding-right
+                    border-right
+                    margin-right
+
+                一个元素在父元素中，水平布局需要满足以下等式：
+                  margin-left+border-left+padding-left+width+ padding-right+border-right+margin-right 
+                  = 其父元素内容去的宽度（必须满足） 
+                  
+                  如果等式不成立 系统会自动调整
+                    -- 如果七个值没有auto情况 浏览器会自动调整margin-right的值以使等式成立
+
+                这七个值中有三个值可以设置auto
+                        -- width
+                        -- margin-left
+                        -- margin-right
+                    如果某个值为auto 则自动调整为auto那个值使等式成立
+
+                    如果将俩个外边距设置为auto，宽度固定 就可以实现子元素在父元素中居中
+                    示例：
+                    width:xxxpx;
+                    margin:0 auto;
+
+
+            
+
+            垂直布局：
+
+
+        */  
+
+        .outer1{
+            background-color: #bfa;
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            
+        }
+        .inner1{
+            height: 400px;
+            width: 100px;
+            background-color: yellow;
+            margin-bottom: 100px;
+        }
+        /*
+            默认情况下父元素的高度被内容区撑开
+                不写父元素的高度都会被子元素撑开
+                写了是多少就是多少
+
+
+            如果子元素的大小超过了父元素，则子元素会从父元素中溢出
+            使用overflow属性来设置父元素如何处理溢出的子元素（overflow设置在父元素）
+                可选值：
+                    visible -- 默认值 子元素从父元素中溢出 在父元素外部的位置显示
+                    hidden --  溢出的内容会被隐藏（裁剪）  不会显示
+                    scroll -- 生成2个滚动条 
+                    auto   -- 根据需要生成滚动条
+        */
+    </style>
+</head>
+
+<body>
+
+
+    <div class="outer">
+        <div class="inner">
+        </div>
+    </div>
+    
+    <br><br><br>
+
+
+
+    <div class="outer1">
+        <div class="inner1"></div>
+    </div>
+
+
+</body>
+
+</html>

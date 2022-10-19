@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        datalist 元素用于为文本框提供一个可供选择的列表
+        使用 list 属性将数据列表绑定到一个文本域
+     -->
+    <label for="myColor">What's your favorite color?</label>
+    <input type="text" list="suggestion">
+    <datalist id="suggestion">
+        <option>red</option>
+        <option>yello</option>
+        <option>pink</option>
+        <option>black</option>
+        <option>blue</option>
+    </datalist>
+
+
+    <!-- 
+        autocomplete属性 是否自动完成功能   autocomplete 属性适用于 <form>，以及下面的 <input> 类型
+        autofocus属性    自动获取焦点       适用于所有 <input> 标签的类型text, search, url, 
+        telephone email, password, datepickers, range 以及 color
+     -->
+
+
+    <form action="#" method="get" autocomplete="on">
+        Name:<input type="text" name="name" /><br />
+        E-mail: <input type="email" name="email" autocomplete="off" autofocus="autofocus" /><br />
+        <input type="submit" value="提交" />
+    </form>
+
+
+    <!--
+        form属性
+            form 属性规定输入域所属的一个或多个表单。
+            form 属性适用于所有 <input> 标签的类型。
+            form 属性必须引用所属表单的 id。
+     -->
+    <form action="#" name="Fname" method="get" id="userName">
+        lastName:<input type="text">
+        <input type="submit" value="提交">
+        LastName:<input type="text" name="Lname" form="userName">
+    </form>
+
+    <!-- 
+        multiple属性 规定输入域中可以选择多个值
+        适用于以下类型的 <input> 标签：email 和 file
+     -->
+    <form action="#" method="post">
+        选择文件：<input type="file" name="file" multiple="mulitiple">
+    </form>
+
+    <br>
+
+
+
+    <!-- 
+        pattern属性
+            通过正则表达式来验证
+            适用于以下类型的 <input> 标签：text, search, url, telephone, email 以及 password
+     -->
+    <form action="#" method="get">
+        Name:
+        <input type="text" name="name" pattern="[A-z]{4}" title="请输入四个字母" />
+        <input type="submit" value="提交" />
+    </form>
+    <br>
+
+    <!-- 
+        placeholder 属性 提供提示
+        适用于以下类型的 <input> 标签：text, search, url, telephone, email 以及 password
+     -->
+
+    <form action="#" method="get">
+        <input type="search" name="user_search" placeholder="实验楼" />
+        <input type="submit" value="提交" />
+    </form>
+
+
+    <!-- 
+        required 属性
+            规定必须在提交之前填写输入域（不能为空）
+            适用于以下类型的 <input> 标签：text, search, url, telephone, email,
+            password, date pickers, number, checkbox, radio 以及 file
+     -->
+
+    <form action="#" method="get">
+        <input type="search" name="user_search" required="required" />
+        <input type="submit" value="提交" />
+    </form>
+
+
+
+    <!-- 
+        input类型
+            url -- 网址
+            number -- 数字
+            range -- 数值范围
+            date -- 日月年
+            month -- 月年
+            week -- 周和年
+            time -- 时间
+            datetime -- UTC  ---此类型已经被弃用  大多数浏览器不支持
+            datetime-local -- 选取时间、日、月、年(本地时间)
+            color -- 颜色选择
+            
+     -->
+</body>
+
+</html>

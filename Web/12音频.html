@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        audio 标签 --- 用来向页面中引入一个外部的音频文件
+            音视频文件引入时默认情况下不允许用户播放停止
+            controls  表示是否允许用户控制  （不用给值）
+            autoplay  音频文件是否自动播放
+            loop 音乐是否自动循环播放
+     -->
+
+    <!-- source也可以引入外部音频文件 对于不支持浏览器audio的可以这样写 -->
+    <audio>
+        对不起 你的浏览器不支持 请升级浏览器
+        <source src="">
+    </audio>
+
+
+    <!-- video视频标签  引入视频文件 -->
+    <video src=""></video>
+
+    <!-- 直接引入外部视频 -->
+    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=n0041aa087e"
+        allowFullScreen="true" width="600px" height="600px">
+    </iframe>
+</body>
+
+</html>

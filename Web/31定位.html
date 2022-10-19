@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: rgb(86, 138, 183);
+            /*position: relative;
+            left: 200px;*/
+            position: absolute;
+        }
+
+        .box3 {
+            background-color: blueviolet;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        定位（position）
+            - 更加高级的布局手段
+            - 通过定位可以将一个元素摆放到任意的位置
+            - 使用position属性设置定位
+                可选值：
+                    static   ---- 默认值 元素是静止的 没有开启定位
+                    relative ---- 开启相对定位
+                    absolute ---- 开启绝对定位
+                    fixed    ---- 开启固定定位
+                    sticky   ---- 开启粘滞定位
+
+
+
+            相对定位：
+                开启相对定位需要设置偏移量(top left right bottom )
+                相对定位是参照于元素在文档流中的位置进行定位的（参照自己的第一次位置）
+                相对定位会提升元素的层级
+                相对定位不会使元素脱离文档流而且不会改变元素的性质
+
+
+
+            绝对定位： 
+                不设置偏移量 该元素的位置不会发生变化
+                元素会从文档流中脱离
+                会改变元素的性质。行内变成块，块的宽高被内容撑开
+                会提升元素的层级
+
+                注意： 
+                    绝对定位使是相对于其包含块进行定位的
+                        包含块 ：
+                        - 正常情况
+                            就是当前元素最近的祖先块元素
+                            <div>
+                                <div></div>        里面的div的包含快就是外面的div
+                            </div>
+
+                        - 绝对定位的包含块：
+                            就是离它最近的开启定位的祖先元素
+
+
+            固定定位：
+                position的属性值设置为fixed 
+                开启固定定位后也会脱离文档流 提升层级 改变元素性质
+                固定定位永远参照于浏览器的视口进行定位
+                不会随着网页的滚动条滚动而滚动
+
+            
+
+            粘滞定位：转到项目练习—导航条
+
+            
+
+     -->
+    <div class="box1">1</div>
+    <div class="box2">2
+        <div class="box4">4</div>
+    </div>
+    <div class="box3">3</div>
+</body>
+
+</html>

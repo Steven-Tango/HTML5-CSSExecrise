@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 24px;
+        }
+        .box1,.box2{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: rgb(160, 181, 118);
+            float: left;
+        }
+        .box2{
+            background-color: blueviolet;
+            clear: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+
+        如果我们不希望某个元素因为其它元素浮动的影响而改变位置
+        可以通过class属性来清楚浮动元素对当前元素所产生的影响
+
+        clear:--清除浮动元素对当前的元素所产生的影响
+            - 可选值
+                left - 清除左侧浮动元素对当前的元素所产生的影响
+                right - 清除右侧浮动元素对当前的元素所产生的影响
+                both  - 清除2侧中最大的一侧
+        
+        
+
+        原理：设置清楚浮动后 浏览器会自动为元素添加一个上外边距
+                使其位置不受其它元素的影响
+     -->
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    
+</body>
+</html>

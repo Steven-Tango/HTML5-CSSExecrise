@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>table使用</p>
+
+    <!-- tr表示行  td表示表格数据(列) -->
+
+    <table border="1" width="300px" height="150px">
+        <tr>
+            <th>1</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+    <!-- 
+        表格属性 
+        cellspacing --- 设置单元格与单元格之间的距离
+        cellpadding --- 设置文字与单元格之间的距离
+        bgcolor ------- 设置背景颜色
+    -->
+
+
+
+    <!-- 合并列(colspan)、合并行(rowspan)  -->
+    <p>合并行与合并列</p>
+
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <td>张三</td>
+        </tr>
+        <tr>
+            <th rowspan="2">电话</th>
+            <td>344 22 112</td>
+        </tr>
+        <tr>
+            <td>234 21 654</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

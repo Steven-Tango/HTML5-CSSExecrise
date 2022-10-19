@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        main,
+        footer {
+            width: 1000px;
+        }
+
+        header {
+
+            height: 150px;
+            background-color: silver;
+            margin: 0 auto;
+        }
+
+        main {
+            background-color: rgb(234, 239, 235);
+            margin: 10px auto;
+        }
+        nav{
+            width: 190px;
+            background-color: yellow;    
+                
+        }
+
+        article{
+            width: 600px;
+            background-color: orange;
+            margin: 0 10px;    
+        }
+
+        aside{
+            width: 190px;
+            background-color: pink;
+        }
+        nav,article, aside{
+            float: left;
+            height: 400px;
+        }
+
+        footer {
+            height: 150px;
+            background-color: rgb(38, 71, 125);
+            margin: 0 auto;
+        }
+        .clearfix{
+            display: table;
+            content: ' ';
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 创建头部 -->
+    <header></header>
+
+    <!-- 创建主体 -->
+    <main class="clearfix">
+        <!-- 左侧导航 -->
+        <nav></nav>
+
+        <!-- 中间内容 -->
+        <article></article>
+        
+        <!-- 右边栏 -->
+        <aside></aside>
+    </main>
+
+    <!-- 网页的底部 -->
+    <footer></footer>
+</body>
+
+</html>

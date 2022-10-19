@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix{
+            display: table;
+            content: ' ';
+            clear: both;
+        }
+        .box{
+            width: 300px;
+        }
+        .box1,.box2,.box3{
+            width: 90px;
+            height: 50px;
+            float: left;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: rgb(30, 190, 123);
+            margin: 0 10px;
+        }
+        .box3{
+            background-color: rgba(27, 17, 226, 0.712);
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3SCHOOL</title>
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <style>
+        body{
+            height: 3000px;
+        }
+       
+        .nav{
+            width: 1202px;
+            height: 48px;
+            background-color: rgb(48, 221, 221);
+            margin: 10px auto;
+            position: sticky;
+            top: 10px;
+        }
+        .nav li{
+            float: left;
+            line-height: 48px;
+            font-size: 18px;
+        }
+        .nav a{
+            text-decoration: none;
+            height: 100%;
+            display: block;
+            padding: 0 39px;
+            color: rgb(245, 242, 238);
+        }
+        a:hover{
+            background-color: darkgray;
+            color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+        粘滞定位：
+            position属性值为sticky
+            粘滞定位和相对定位特点基本一致
+            不同的是可以让元素达到某一个位置的时候将其固定
+
+     -->
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">HTML/CSS</a>
+            </li>
+            <li>
+                <a href="#">Browser Side</a>
+            </li>
+            <li>
+                <a href="#">Server Side</a>
+            </li>
+            <li>
+                <a href="#">Programming</a>
+            </li>
+            <li>
+                <a href="#">XML</a>
+            </li>
+            <li>
+                <a href="#">Wev Building</a>
+            </li>
+            <li>
+                <a href="#">Reference</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+
+
+        /* 
+            伪元素 表示页面中特殊的且不存在的元素
+                以::开头
+                
+            ::first-letter -- 表示第一个字母
+            ::first-line  --- 表示第一行
+            ::selection   --- 表示选中的内容
+            ::after     ----- 表示元素开始
+            ::before     ----- 表示元素结束
+                - before和after必须结合content属性来使用
+        */ 
+
+        div::after{
+            content: "s";
+        }
+        div::before{
+            content: "qa";
+        }
+
+        p::first-letter{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto repudiandae consectetur pariatur, numquam
+        deleniti commodi eos enim quod nostrum. Quibusdam suscipit beatae ratione minima hic tempora dolorem nam porro!
+    </p>
+</body>
+
+</html>

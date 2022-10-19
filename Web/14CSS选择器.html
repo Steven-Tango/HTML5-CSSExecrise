@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            元素选择器
+                元素选择器 -- 标签名{}
+
+                id选择器 -- #id属性值{}
+
+                类选择器 -- .class属性值{}  可以为同一元素设置不同的class属性
+
+                通配选择器 -- #{}   选中页面中的所有元素
+
+                交集选择器：-- 选择器1选择器2选择器3选择器n{}     选中同时复合多个条件的元素  如果选择器中有元素选择器，必须以元素选择器开头
+
+                并集选择器 -- 选择器1,选择器2,选择器n{}    同时选中多个选择器对应的元素
+
+                关系选择器 -- 子元素选择器：父元素>子元素
+                            后代元素选择器： 选中指定元素内的指定后代元素
+                            语法：祖先 后代
+                            兄弟元素选择器：前一个 + 下一个
+                            选择下边所有的兄弟元素 兄 ~ 弟
+
+            属性选择器
+                标签[属性名]{} -- 先择含有指定属性的元素
+                标签[属性名=属性值]{} -- 先择含有指定属性和属性值的元素
+                标签[属性名^=属性值]{} -- 先择属性值以指定值开头的元素
+                标签[属性名$=属性值]{} -- 先择属性值以指定值结尾的元素
+                标签[属性名*=属性值]{} -- 先择属性值中含有某值的元素
+
+        */
+        /* 子元素选择器 */
+        /* div > span{
+            color: brown;
+        } */
+
+        /* 后代元素选择器 */
+        div span {
+            color: rgb(158, 198, 174);
+        }
+
+        /* 兄弟元素选择器 */
+        /* p + span{
+            color: cadetblue;
+        } */
+
+
+
+        /* 
+        div.red {
+            color: blue;
+        }
+
+        .red {
+            color: brown;
+        } */
+
+
+
+
+        /* 
+            选择器权重：
+                内联样式>id选择器>类和伪类选择器>元素选择器>通配选择器>继承的样式
+                  1000    100          10          1          0     没有优先级
+
+                  并集选择器会单独计算
+                  如果计算结果相等 优先使用靠下的
+                  !important -- 最高权重（超过内联样式）
+        */
+
+
+
+        /* 鼠标选中时改变背景颜色 */
+        span::selection {
+            background-color: rgb(43, 168, 59);
+        }
+
+        p~span {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="red">我的是div</div>
+    <p class="red">我是p标签</p> -->
+
+    <div>
+        我是div
+        <p>
+            我是div中的元素
+            <span>我是p元素中的span</span>
+        </p>
+        <span>我是div中的span元素</span>
+
+    </div>
+
+    <span>我是外边的span</span>
+
+
+</body>
+
+</html>
