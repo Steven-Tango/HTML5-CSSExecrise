@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+            font: bold italic 30px/2 '楷体';
+        }
+
+        /*
+            font 可以设置字体相关的所有属性
+                语法：字体大小/行高 字体族
+                            行高可以省略不行 如果不写 会使用默认值
+                注意： 字体大小和字体族必须写而且必须在最后
+        */
+
+        .lorem {
+            width: 500px;
+            border: 1px solid red;
+            /*
+                text-align 文本水平对齐
+                    left    左对齐
+                    right   右对齐
+                    center  居中对齐
+                    justify 两端对齐
+            */
+            text-align: justify;
+        }
+
+        .vertical {
+            width: 500px;
+            border: 1px solid red;
+            font-size: 50px;
+            /*
+                vertical-align 设置元素垂直对齐
+                    baseline    默认值 基线对齐
+                    top         顶部对齐 子元素的顶部和父元素的顶部对齐
+                    bottom      底部对齐 子元素的顶部和父元素的底部对齐
+                    middle      居中对齐
+            */
+
+
+        }
+
+        span {
+            font-size: 20px;
+            border: 1px blue solid;
+        }
+
+        /*
+            text-decoration 设置文本修饰
+                overline 上划线
+        */
+        p {
+            text-decoration: overline;
+        }
+
+
+
+        .box1{
+            border: 1px solid red;
+            font-size: 20px;
+        }
+        .box2{
+            border: 1px solid red;
+            width: 200px;
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>今天天气真不错！！！</div>
+
+    <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatem, exercitationem neque suscipit nostrum
+        placeat. Quaerat atque expedita nulla non quasi! Impedit aut placeat unde odio magni sint excepturi consequatur?
+    </div>
+    <br>
+    <div class="vertical">
+        今天天气Hey<span>y真不错 Guyes</span>!
+    </div>
+
+    <p>hey Guyes</p>
+
+    <h1>widte-space使用</h1>
+    <!--  
+        widte-space 设置网页如何处理空白
+            normal  正常
+            nowwarap 不换行
+            pre     保留
+    -->
+
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate dolorum omnis, suscipit nam,
+        inventore nobis quod distinctio quisquam iure quae ratione nemo? A nobis incidunt neque provident optio sunt.
+    </div>
+
+    <div class="box2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste vero officiis reprehenderit laboriosam itaque
+        libero temporibus eaque velit totam distinctio optio, ex cumque in facilis impedit quo harum animi. Modi.
+    </div>
+</body>
+
+</html>
