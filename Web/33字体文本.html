@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fontawsome/css/all.css">
+    <link rel="stylesheet" href="../iconfot/iconfont.css">
+    <style>
+        p {
+            font-family: myfont;
+        }
+
+        /* 
+            font-face可以将服务器中的字体直接提供给用户使用
+        */
+        @font-face {
+            /* 指定字体名字 */
+            font-family: 'myfont';
+            /* 服务器中字体的路径 */
+            src: url('font/AaYangGuanQu-2.ttf');
+        }
+
+
+        ul li::before {
+            content: '\f423';
+            font-family: 'Font Awesome 5 Brands';
+        }
+        .iconfont{
+            font-size:60px;
+        }
+        .weiyuansu::before{
+            content: '\e719';
+            font-family: 'iconfont';
+            font-size: 50px;
+        }
+        .weiyuansu::after{
+            content: '\e718';
+            font-family: 'iconfont';
+            font-size: 50px;
+        }
+        div{
+            font-size: 50px;
+            border: 1px solid red;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+        color属性
+        font-size属性
+                em = 一个font-size
+                rem 相当于根元素的一个font-size
+        font-family:; -- 字体格式
+            可选值:
+                serif          衬线字体
+                sans-serif     非衬线字体    
+                monospace      等宽字体
+                - 这三个值属于字体分类浏览器会自动识别该类下的字体
+        
+        font-family 可以指定多个字体
+            字体生效时优先使用第一个，第一无法使用则使用第二个以此类推
+
+
+
+        图标字体：
+            在网页中需要使用一些图标
+            通过托图片引入图标
+            通过font-face来对字体引用
+        fontawesome使用步骤：
+            引入all/css引入进来
+            直接通过类名使用字体
+                    fas或者fab
+
+        使用伪元素添加图标字体
+             ul li::before{
+            content: '\f423';
+            font-family:'Font Awesome 5 Brands' ;
+        }
+
+        通过实体添加图标字体
+        基本结构：&#x编码;
+            <span class="fas">&#xf0f3;</span>
+
+        iconfont使用：（用法和上面是一样的）
+            引入iconfont.css
+
+
+
+
+        字体行高：（line-height）
+            - 指的是文字占有的实际高度
+            - 通过line-height设置行高
+                行高可以指定大小也可以直接设置一个整数
+                                                整数 -- 字体大小的倍数
+
+            默认行高1.333
+        
+
+        字体框
+            - 就是字体存在的格子，设置font-size实际上就是在设置字体框的高度
+
+        行高会在字体框的上下平均分配
+        无论行高设置多大 都会在中间
+        行高和高度一致，使单行文字垂直居中
+
+        行高设置文字的行间距
+            行间距=行高-字体大小
+
+     -->
+    <i class="fas fa-bell" style="color:rgb(24, 216, 72) ;"></i>
+    <p>
+        今天天气真不错！！！
+    </p>
+    <ul>
+        <li>前端开发</li>
+        <li>java</li>
+        <li>html</li>
+        <li>JavaScript</li>
+    </ul>
+    <span class="fas">&#xf0f3;</span>
+
+    <h2>iconfont使用图标字体</h2>
+    <p>实体引用:</p>
+    <span class="iconfont">&#xe70d;</span>
+
+    <p>类属性使用</p>
+    <span class="iconfont icon-question"></span>
+
+    <p class="weiyuansu">伪元素使用</p><br><br>
+
+
+    <h1>字体行高</h1>
+
+    <div>今天天气真不错！！！</div>
+    
+</body>
+
+</html>

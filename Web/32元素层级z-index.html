@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 40px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color:#bfa;
+            position: absolute;
+            /*z-index: 1;*/
+        }
+
+        .box2 {
+            background-color: rgba(255, 0, 0,.3);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+           /* z-index: 2;*/
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position: absolute; 
+            top: 100px;
+            left: 100px;
+            /*z-index: 3;*/
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+
+        对于开启定位元素，可以通过z-index属性设置元素层级
+            z-index需要整数作为参数 值越大层级越高
+                元素的层级越高优先显示
+
+        如果层级一样 优先显示靠下的元素
+
+        祖先元素的层级再高 也不会盖住后代元素
+
+     -->
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3
+        <div class="box4"></div>
+    </div>
+</body>
+
+</html>
