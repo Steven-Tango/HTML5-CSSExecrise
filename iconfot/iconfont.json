@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "6756284",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
       "icon_id": "29957555",
       "name": "information",
       "font_class": "information",
