@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: #bfa;
+            /*background-image: linear-gradient(0.25turn,red,yellow);*/
+            /*background-image: linear-gradient(45deg,red 40px,yellow 50px, blue 100px);*/
+            /*background-image: repeating-linear-gradient(90deg, red ,yellow , blue 50px);*/
+            background-image: radial-gradient(100px 100px at /*90px*/center, red,orange);
+           
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+
+        通过渐变可以设置复杂颜色，实现一个颜色向其它颜色过度效果
+        线性渐变
+            ！！渐变是图片，需要通过background-imageg来设置
+                linear-gradient(渐变角度,颜色值1,颜色值2....) -- 线性渐变(沿着一条直线发生变化)
+                                to left
+                                to right
+                                to bottom
+                                to top
+                                xxxdeg(deg表示度数)
+                                turn(turn表示圈)
+                repeating-linear-gradient() -- 平铺线性渐变
+
+        径向渐变 
+            radial-gradient(渐变形状,圆心位置,颜色1,颜色2.....) -- 径向渐变
+                    渐变形状:
+                            circle -- 正园
+                            ellipse -- 椭园
+
+
+        渐变可以手动指定渐变的分布情况
+
+
+
+     -->
+    <div class="box1"></div>
+</body>
+</html>
