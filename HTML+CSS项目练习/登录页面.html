@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>登录界面</title>
+	<style>
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			background-color: #22d1ee;
+			font-family: '楷体';
+		}
+
+		#Login {
+			width: 300px;
+			height: 345px;
+			margin: 100px auto;
+			background-color: rgba(71, 21, 78, 0.3);
+			box-shadow: 2px 5px 8px rgba(120, 64, 88, 0.4);
+			overflow: hidden;
+			border-radius: 25px;
+		}
+
+		#head {
+			text-align: center;
+			margin: 20px auto;
+			font-size: 25px;
+			color: azure;
+		}
+		#main{
+			margin: 40px auto;
+			text-align: center;
+			line-height: 45px;
+		}
+		.input{
+			outline: none;
+			background-color: #c5e3f6;
+			outline: none;
+			width: 180px;
+			height: 25px;
+			border: none;
+			border-bottom: 1px solid rgba(116, 139, 201, 0.4);
+			border-radius: 5px;
+			color: rgb(181, 181, 164);
+		}
+		.input:hover{
+			box-shadow:2px 5px 8px rgba(120, 64, 88, 0.4);
+		}
+		#Login_Register{
+			text-align: center;
+			position: relative;
+		}
+		#Login_Register button{
+			border:none;
+			font-size: 15px;
+			background-color: #91bcb2;
+			border-radius: 5px;
+			display: block;
+			width: 70px;
+			height: 25px;
+			position: absolute;
+			color: #6b7d80;
+		}
+		.lg{
+			margin-left: 40px;
+		}
+		.re{
+			margin-left: 190px;
+		}
+		#Login_Register button:hover{
+			box-shadow:2px 5px 8px rgba(120, 64, 88, 0.4);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="Login">
+		<!-- 创建头部 -->
+		<div id="head">
+			Login
+		</div>
+		<!-- 创建主体 -->
+		<div id="main">
+			<form action="#">
+				<p>
+					<input type="text"  placeholder="用户名"  class="input">
+				</p>
+				<p>
+					<input type="password" placeholder="密码" class="input" >
+				</p>
+			</form>
+		</div>
+		<!-- 创建底部 -->
+		<div id="Login_Register">
+			<button class="lg">登录</button>
+			<button class="re">注册</button>
+		</div>
+	</div>
+</body>
