@@ -149,12 +149,17 @@
 }
 .shop-cart-div span{
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     display: block;
-    margin: 40px auto;
+    margin: 38px 40px;
 }
 .shop-cart:hover .shop-cart-div{
     /* display:block; */
     height:100px;
+}
+
+.shop-a{
+    position: relative;
+    z-index: 1;
 }
 
