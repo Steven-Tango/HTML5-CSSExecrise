@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米商城</title>
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入图标字体 -->
+    <link rel="stylesheet" href="./fontawsome/css/all.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/base.css ">
+    <!-- 引入index.css -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    
+    <!-- 创建顶部导航条 -->
+    <!-- 顶部导航条外部容器 -->
+    <div class="topbar-warapper">
+        <!-- 创建中间内部容器 -->
+        <div class="topbar w clearfix">
+            <!-- 左侧内容区域 -->
+            <ul class="service">
+                <li><a href="#">小米商城</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">MIUI</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">loT</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">云服务</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">金融</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">有品</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">小爱开放平台</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">企业团购</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">资源证照</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">协议规则</a></li>
+                <li class="line">|</li>
+
+                <li>
+                    <a class="app" href="#">
+                        下载app
+                        <!-- 添加弹出层 -->
+                        <div class="qrcode">
+                            <img src="./img/rqcodee.png">
+                            <span>小米商城app</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="line">|</li>
+
+                <li><a href="#">Select Location</a></li>
+            </ul>
+
+            <!-- 右侧用户登录注册信息 -->
+            <ul class="shop-cart">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        购物车（0）
+                        <!-- 添加购物车弹出层 -->
+                        <div class="shop-cart-div">
+                            <span>购物车中还没有商品，赶紧选购吧！</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- 右侧内容区域 -->
+            <ul class="user-info">
+                <li><a href="#">登录</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">注册</a></li>
+                <li class="line">|</li>
+
+                <li><a href="#">消息通知</a></li>
+            </ul>
+
+        </div>
+    </div>
 </body>
+
 </html>
