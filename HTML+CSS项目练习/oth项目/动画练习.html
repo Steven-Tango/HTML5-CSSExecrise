@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画练习</title>
+    <style>
+        .box1{
+            width: 244px;
+            height: 219px;
+            background-image: url(../../IMG/banner2.png);
+            margin: 50px auto;
+            animation: run 500ms steps(6) infinite;
+        }
+        .box2{
+            margin: 100px auto;
+            width: 110px;
+            width: 90px;
+            height: 441px;
+            background-image: url(../../IMG/banner1.png);
+            animation: multipleRun 500ms steps(6) infinite;
+        }
+        /*创建动画*/
+        @keyframes run {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1467px 0;
+            }
+        }
+        @keyframes multipleRun {
+            form{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -775px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
