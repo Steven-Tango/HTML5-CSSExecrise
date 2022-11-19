@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background-color: rgb(216, 211, 204);
+        }
+
+        .nav {
+            width: 500px;
+            height: 50px;
+            background-color: cadetblue;
+            border-radius: 25px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .nav .list li {
+            float: left;
+            line-height: 50px;
+        }
+        .nav .list li a{
+            text-decoration: none;
+            font-size: 17px;
+            color: aquamarine;
+            text-align: center;
+            height: 100%;
+            padding:  0 33px;
+            display: block;
+            transition: all .3s;
+        }
+        .nav .list li a:hover{
+            color: blanchedalmond;
+            transform:  translateY(-8px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="list">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">社区</a></li>
+            <li><a href="#">客户</a></li>
+            <li><a href="#">下载</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
