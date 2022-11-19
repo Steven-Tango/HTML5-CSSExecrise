@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*设置当前网页的视距*/
+        html{
+            perspective: 800px;
+        }
+        .box1{
+            width: 200px;   
+            height: 200px;
+            margin: 50px auto;
+            background-color: #bfa;
+            transform: translateX(100px);
+            transform: translateY(100px);
+        }
+        .box2{
+            width: 200px;   
+            height: 200px;
+            margin: 50px auto;
+            background-color: rgb(46, 71, 40);
+        }
+        .box3{
+            background-color: orange;
+            position: absolute;
+            /*通过translateX()translateY()可以实现灵活的居中效果*/
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            
+        }
+
+        
+        /*
+            变形就是通过css改变元素的形状或位置，但是不会影响页面的布局
+
+                transform  用来设置变形效果
+                    - 平移
+                        translateX() 沿着x轴方向平移
+                        translateY() 沿着y轴方向平移   在平移元素时  百分比是相对于自身计算的
+
+                        translateZ() 沿着z轴方向平移
+                                - 正常情况下是调整元素和人眼之间的距离
+                                - z轴属于立体效果（近大远小） 默认情况是不支持透视
+                                - 设置视距才可以有效果
+                                    一般设置给html
+                                    html{
+                                        perspective: 800px; 设置当前网页视距（600-1200）
+                                    }
+            旋转就是让元素沿着xyz轴旋转指定的角度
+                rotateX()
+                rotateY()
+                rotateZ()
+            backface-visibility: visible; 是否显示元素的背面
+        */
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">aaa</div>
+</body>
+</html>
