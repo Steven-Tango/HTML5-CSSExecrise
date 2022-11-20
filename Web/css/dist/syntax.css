@@ -1,0 +1,45 @@
+.box1 {
+  background-color: blanchedalmond;
+}
+.box1 .box2 {
+  background-color: aqua;
+}
+.box1 .box3 {
+  background-color: bisque;
+}
+.box4 {
+  width: 100px;
+  color: #bfc;
+  background-color: #bfc;
+}
+.box5 {
+  width: 100px;
+}
+div {
+  width: 200px;
+}
+.bo5 {
+  width: 400px;
+  height: 400px;
+}
+.outer {
+  color: royalblue;
+}
+.outer .inner {
+  color: #bfc;
+}
+.outer:hover {
+  background-color: rosybrown;
+}
+.p1,
+.p2 {
+  width: 100px;
+  height: 200px;
+}
+.p2 {
+  background-color: red;
+}
+.p3 {
+  width: 100px;
+  height: 200px;
+}

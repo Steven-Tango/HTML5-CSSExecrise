@@ -1,0 +1,63 @@
+.box1{
+    background-color: blanchedalmond;
+    .box2{
+        background-color: aqua;
+    }
+    .box3{
+        background-color: bisque;
+    }
+}
+
+// 变量使用
+// 声明变量  -- @变量名
+@a:100px;
+@color:#bfc;
+.box4{
+    width: @a;
+    color: @color;
+    background-color: @color;
+}
+// 作为类名使用，或者一部分值使用，必须@{变量名}使用
+@c:box5;
+.@{c}{
+    width: @a;
+}
+
+// 变量重名时，优先使用距离近的变量     可以在变量声明前使用变量(这种不建议)
+@d:100px;
+@d:200px;
+div{
+    width:@d;
+}
+
+// 新版本语法
+.bo5{
+    width:400px;
+    height: $width;
+}
+
+// &表示外层的父元素
+.outer{
+    color: royalblue;
+    .inner{
+        color: #bfc;
+    }
+    &:hover{
+        background-color: rosybrown;
+    }
+}
+
+
+// :extend() - 对当前选择器扩展指定选择器的样式（选择器分组）
+.p1{
+    width: 100px;
+    height: 200px;
+}
+.p2:extend(.p1){
+    background-color: red;
+}
+.p3{
+    // 直接对指定的样式进行引用，这里相当于将p1的样式在这里进行了复制 
+    // mixin 混合 
+    .p1();
+}
