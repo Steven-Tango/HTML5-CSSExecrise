@@ -1,3 +1,6 @@
+@import "style.less";
+// @import 引用其它的less文件
+
 .box1{
     background-color: blanchedalmond;
     .box2{
@@ -60,4 +63,37 @@ div{
     // 直接对指定的样式进行引用，这里相当于将p1的样式在这里进行了复制 
     // mixin 混合 
     .p1();
+}
+
+// 混合函数  在混合函数中可以直接使用变量
+.test(@w,@h){
+    width: @w;
+    height: @h;
+    border: 1px solid red;
+}
+div{
+    // 使用混合函数，按照顺序传递参数
+    // .test(200px,300px)
+    .test(@w:200px,@h:340px)
+}
+
+span{
+    // average()取平均值
+    color: average(red,orange);
+}
+
+// darken()加深
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #bfc;
+}
+body:hover{
+    background-color: darken(#bfc,10%);
+}
+
+// 在less中所有的数值可以进行运算(+ - * /)
+.box5{
+    width: 100px+20px;
+    height: 2px+200px;
 }
