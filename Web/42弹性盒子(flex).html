@@ -37,6 +37,39 @@
                     侧轴：
                         与主轴垂直方向的称为侧轴
 
+
+                flex-wrap 设置弹性元素是否在弹性容器中自动换行
+                    可选值：
+                        npwrap 默认值 不换行
+                        warp  元素沿着辅轴换行
+                        warp-reverse 元素沿着辅轴反方向换行
+
+                flex-flow:  warp 和 direction的简写属性;
+                flex-flow: row wrap;
+
+
+                凡是看到justify都表示主轴
+                justify-content: ;  -- 表示主轴上的元素如何排列
+                    可选值：
+                        flex-start  元素沿着起边排列
+                        flex-end    元素沿着主轴的终边排列
+                        center      元素居中排列
+                        space-around 空白分布到元素两侧
+                        space-evenly 空白分布到元素单侧
+                        space-between 空白均匀分布到间
+
+                align-items: ;  表示元素在辅轴上如何对齐  是元素之间的关系
+                    可选值：
+                        stretch 默认值 将元素的长度设置位相同的值
+                        flex-start 元素不会拉伸，沿着辅轴起边对齐
+                        flex-end    元素沿着辅轴的终边排列
+                        center      元素居中对齐
+                        baseline    基线对齐
+
+                align-content: ; 表示辅轴空白间的分布
+                    值都和justify-content差不多
+                
+
             */
         }
         li{
@@ -51,7 +84,25 @@
                     - 父元素的剩余空间，会按照比例进行分配
 
                 flex-shrink 指定弹性元素的收缩系数
-                    - 当父元素中的空间不足以容纳所有的子元素，对子元素进行收缩
+                    - 当父元素中的空间不足以容纳所有的子元素，对子元素进行收缩  
+                
+                
+                align-self:; 用来覆盖弹性元素上的align-items
+
+                flex-basis  元素的基础长度
+                        如果主轴是 横向的 则该值指定的就是元素的宽度
+                        如果主轴是 纵向的 则该值指定的就是元素的高度
+                        默认值是auto  --- =表示参考元素自身的宽度和高度
+                        入果传递了一个具体的数值，以该值为准
+
+                flex可以设置弹性元素所有的值
+                    顺序：flex: 增长 缩减 基础;
+                    flex: 1 1 auto;
+                flex:initial; -- 相当于是 flex: 0 1 auto; 弹性元素只能减
+                flex:auto; -- 相当于是 flex: 1 1 auto; 弹性元素可增可减
+                flex:none; -- 相当于是 flex: 0 0 auto; 弹性元素没有弹性
+
+                order  --  决定弹性元素的排列顺序  
             */
         }
         li:nth-child(2){
