@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            font-size: 5.333vw;
+        }
+        .box{
+            width: 6.4vw;
+            height: 4.667vw;
+            background-color: rgb(215, 218, 220);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        由于不同设备的视口和像素比不同  所以同样的375像素在不同设备下意义不一样
+            比如： iphone6中 375时全屏   而到了plus中375就会却一块
+
+        在移动端开发时，就不能用px来进行布局
+
+        vw（viewport width） -- 表示视口的宽度
+            - 100vw = 一个视口的宽度
+            - 1vw   = 1%视口宽度
+            - vw永远相对于视口宽度进行计算
+
+        实际设计图中
+            一般宽度都是750px 1125px  都是375px的倍数
+
+        比如 要创建48px x 35px 大小的元素
+            100vw = 750px(设计图中的像素)  0.133333333vm = 1px --- > 0.13333333*48
+            ?vw   = 48px(设计图中的像素)   --- > ? = 6.4     或者48/(750/100)
+            4.667vw = 35px(设计图中的像素)
+            就是简单数学计算
+
+        
+        适配方案：
+            
+            rem
+                - 1rem = 1html字体大小
+                    3rem = 300px
+
+            网页中最小字体时12px 不能设置比12px小的字体 如果设置了小于12px的字体 字体会自动设置12px
+
+            所以直接给html设置5.33vw（40px）的font-size
+            其它标签直接使用rem表示 
+     -->
+    <div class="box"></div>
+</body>
+</html>
