@@ -1,0 +1,20 @@
+/* 设置clearFix */
+.clearfix::before,
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* 设置中间容器宽度 */
+.w{
+    width: 1226px;
+}
+/* 设置body的公共样式 */
+body{
+    min-width:1226px;
+    color:#3c3c;
+}
+/* 设置a的公共样式 */
+a{
+    text-decoration: none;
+}
