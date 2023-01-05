@@ -1,0 +1,19 @@
+.product-intro p{
+	/* text-align: center; */
+	line-height: 30px;
+	font-family: '宋体';
+	font-size: 19px;
+}
+.product-intro .center{
+	text-align: center;
+	font-family: '宋体';
+	font-size: 15px;
+	color: darkgrey;
+}
+.read{
+	color: cornflowerblue;
+	font-weight: bolder;
+}
+#read{
+	font-size: 16px;
+}

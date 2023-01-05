@@ -1,0 +1,23 @@
+.clearfix::before,
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+body{
+    font-size: 14px;
+    color: #333;
+    /* 防止容器溢出 */
+    min-width: 1226px;
+}
+/* 表示中间容器的宽度 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 去除a的下划线 */
+a{
+    text-decoration: none;
+}

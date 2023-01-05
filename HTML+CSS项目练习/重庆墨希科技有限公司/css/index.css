@@ -1,0 +1,372 @@
+/* 设置头部容器 */
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .contact,
+.fs {
+	margin-top: 40px;
+}
+
+.header .contact .number {
+	font-size: 26px;
+	font-weight: 500;
+}
+
+.header .contact .fontStyle {
+	font-size: 17px;
+}
+
+.header .fs .iconFont i {
+	font-size: 1.25rem;
+	color: gainsboro;
+}
+
+/* 设置导航栏容器 */
+.nav {
+	width: 100%;
+	line-height: 50px;
+	background-image: linear-gradient(to left, #009EDF, #2879B1);
+}
+
+.nav .navBar .navList li a {
+	display: block;
+	text-align: center;
+	height: 100%;
+	font-size: 18px;
+	color: white;
+}
+
+.nav .navBar .navList li {
+	flex-grow: 1;
+}
+
+.nav .navBar .navList li a:hover {
+	background-image: linear-gradient(to top, #34AADE, #25A1D8, #5BB4DE);
+}
+
+.nav .navBar .navList {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 设置banner */
+.swiper img {
+	align-items: center;
+}
+
+/* 设置内容区top */
+.contentTop .introduce {
+	width: 900px;
+	height: 273px;
+}
+
+.contentTop .introduce .listNav {
+	height: 35px;
+	width: 900px;
+	position: relative;
+	background-color: #1D83BE;
+	border-radius: 5px 5px 0 0;
+}
+
+.contentTop .introduce .listNav .introduceFirm,
+.more {
+	position: absolute;
+}
+
+.contentTop .introduce .listNav .introduceFirm {
+	left: 22px;
+	top: 3px;
+	width: 90px;
+	height: 22px;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+	padding-top: 10px;
+	background-color: #E1F3FF;
+}
+
+.contentTop .introduce .listNav .more {
+	right: 25px;
+	top: 11px;
+}
+
+.contentTop .introduce .listNav .more a {
+	color: white;
+}
+
+.contentTop .introduce .introduceContent {
+	position: relative;
+}
+
+.contentTop .introduce .introduceContent .wenzi {
+	display: block;
+	width: 580px;
+	position: absolute;
+	left: 318px;
+	top: 10px;
+}
+
+.contentTop .introduce .introduceContent .wenzi p {
+	line-height: 28px;
+	font-size: 12px
+}
+
+.contentTop .introduce .introduceContent .lj {
+	position: absolute;
+	left: 315px;
+	top: 160px;
+}
+
+.contentTop .introduce .introduceContent .lj a {
+	color: black;
+}
+
+.contentTop {
+	position: relative;
+}
+
+.contentTop .partner {
+	width: 290px;
+	height: 260px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.contentTop .partner .rightListNav {
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	height: 35px;
+	background-color: #237EB7;
+}
+
+.contentTop .partner .rightListNav .partenerOperation,
+.rightMore {
+	position: absolute;
+}
+
+.contentTop .partner .rightListNav .partenerOperation {
+	left: 20px;
+	top: 6px;
+	width: 90px;
+	height: 20px;
+	text-align: center;
+	background-color: #E1F3FF;
+	padding-top: 9px;
+	border-radius: 5px 5px 0 0;
+}
+
+.contentTop .partner .rightListNav .rightMore {
+	right: 20px;
+	top: 11px;
+}
+
+.contentTop .partner .rightListNav .rightMore .r-more {
+	color: white;
+}
+
+.contentTop .partner .imgPartner {
+	margin-top: 10px;
+}
+
+/* 
+	设置内容区center
+ */
+.leftCenter {
+	width: 769px;
+}
+
+.leftCenter .listCenterL {
+	width: 100%;
+	height: 35px;
+	background-color: #009EDF;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+
+.leftCenter .listCenterL .firmNews,
+.newsMore {
+	position: absolute;
+}
+
+.leftCenter .listCenterL .firmNews {
+	left: 20px;
+	top: 6px;
+	width: 90px;
+	height: 20px;
+	text-align: center;
+	background-color: #E1F3FF;
+	border-radius: 5px 5px 0 0;
+	padding-top: 9px;
+}
+
+.leftCenter .listCenterL .newsMore {
+	right: 20px;
+	top: 11px;
+}
+
+.leftCenter .listCenterL .newsMore a {
+	color: white;
+}
+
+.contentCenter{
+	display: flex;
+	justify-content: space-evenly;
+}
+/* .contentCenter{
+	position: relative;
+}
+.rightCenter {
+	position: absolute;
+	right: 0;
+	top: 0;
+} */
+
+.contentCenter .leftCenter .newList {
+	width: 379px;
+	height: 379px;
+	margin-top: 15px;
+}
+
+.contentCenter .leftCenter .newList .new-list {
+	width: 100%;
+	height: 108px;
+	margin-top: 20px;
+	border-bottom: dotted 1px gray;
+}
+
+.contentCenter .leftCenter .newList .new-list li {
+	list-style: circle;
+	line-height: 20px;
+	margin-left: 18px;
+}
+
+.contentCenter .leftCenter .newList .new-list li a:hover {
+	color: red;
+}
+
+.contentCenter .leftCenter .newList .new-list li a {
+	font-size: 10px;
+	color: black;
+}
+
+.contentCenter .leftCenter {
+	position: relative;
+}
+
+.contentCenter .leftCenter .leftIMG {
+	width: 380px;
+	position: absolute;
+	text-align: center;
+	left: 400px;
+	top: 25%;
+}
+
+.contentCenter .rightCenter {
+	width: 400px;
+}
+
+.contentCenter .rightCenter .listCenterR {
+	height: 35px;
+	background-color: #009EDF;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+.contentCenter .rightCenter .listCenterR .videoNews,.videoMore{
+	position: absolute;
+}
+.contentCenter .rightCenter .listCenterR .videoNews{
+	left: 20px;
+	top: 6px;
+	width: 90px;
+	height: 20px;
+	text-align: center;
+	background-color: #E1F3FF;
+	border-radius: 5px 5px 0 0;
+	padding-top: 9px;
+}
+.contentCenter .rightCenter .listCenterR .videoMore{
+	right: 22px;
+	top: 0.6875rem;
+}
+.contentCenter .rightCenter .listCenterR .videoMore a{
+	color: white;
+}
+.contentCenter .rightCenter .newR{
+	width: 370px;
+	margin: 0 auto;
+}
+.contentCenter .rightCenter .newR .newList{
+	width: 100%;
+	margin-top: 15px;
+	border-bottom: 1px dotted gray;
+}
+.contentCenter .rightCenter .newR .newList li{
+	line-height: 30px;
+}
+.contentCenter .rightCenter .newR .newList li a{
+	color: black;
+}
+.contentCenter .rightCenter .newR .newList li a:hover{
+	color: red;
+}
+/* 设置内容区footer */
+.contentFooter .title{
+	height: 35px;
+	width: 100%;
+	background-color: #25A1D8;
+	text-align: center;
+	line-height: 35px;
+	font-size: 24px;
+	font-family: '宋体';
+	font-weight: bold;
+	color: white;
+}
+.contentFooter .product-top{
+	margin-top: 10px;
+}
+.contentFooter .product-top ul li a{
+	display: block;
+}
+.contentFooter .product-top ul{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+.contentFooter .product-bottom ul{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+/* .contentFooter .product-top ul li p a{
+	text-align: center;
+	color: black;
+	font-size: 14px;
+	font-family: '宋体';
+} */
+.contentFooter ul li p a{
+	text-align: center;
+	color: black;
+	font-size: 14px;
+	font-family: '宋体';
+	display: block;
+}
+.contentFooter  ul li p a:hover{
+	color: red;
+}
+/* 设置footer */
+.footer{
+	width: 100%;
+	background-image: linear-gradient(to top,#138DC9,#227FB8,#1987C2,#148AC7);
+}
+.footer .footerContent{
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
+.footer .footerContent .copy{
+	line-height: 1.75rem;
+	font-size: 16px;
+}

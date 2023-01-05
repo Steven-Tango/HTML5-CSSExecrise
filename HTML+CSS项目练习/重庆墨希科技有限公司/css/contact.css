@@ -1,0 +1,15 @@
+.contact-me{
+	line-height: 34px;
+	margin: 50px auto;
+}
+.contact-me #title{
+	font-size: 20px;
+	font-weight: bolder;
+}
+.contact-me #content{
+	font-size: 14px;
+	font-family: '宋体';
+}
+.footer{
+	margin-top: 700px;
+}

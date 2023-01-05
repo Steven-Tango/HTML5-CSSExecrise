@@ -1,0 +1,12 @@
+.intro-content{
+	margin: 50px auto;
+	width: 900px;
+}
+.intro-content p{
+	font-size: 14px;
+	font-family: '宋体';
+	color: #666666;
+}
+.intro-content p,img{
+	line-height: 34px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>重庆墨希科技有限公司</title>
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/contact.css">
+		<link rel="stylesheet" href="./css/news.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./fontawsome/css/all.css">
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<div class="w header">
+			<div class="logo">
+				<img src="./img/logo.png">
+			</div>
+			<div class="contact">
+				<i class="fontStyle">终端产品</i>
+				<i class="number">023-68050720</i>
+				&nbsp;&nbsp;
+				<i class="fontStyle">材料器件</i>
+				<i class="number">023-68058666</i>
+			</div>
+			<div class="fs">
+				<a href="#" class="iconFont">
+					<i class="fas fa-cart-arrow-down"></i>
+				</a>
+				<a href="#" class="iconFont">
+					<i class="fas fa-cart-arrow-down"></i>
+				</a>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="nav">
+			<div class="w navBar">
+				<ul class="navList">
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li><a href="#">团队风采</a></li>
+					<li><a href="./showProduct.html">产品展示</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">在线学习</a></li>
+					<li><a href="./news.html">新闻资讯</a></li>
+					<li><a href="#">招纳贤士</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 创建banner容器 -->
+		<div class="swiper clearfix w">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide w"><a href="#"><img src="./img/banner.png" width="1200px"></a></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+			<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<script>
+			var mySwiper = new Swiper('.swiper', {
+				autoplay: true,
+				loop: true, // 循环模式选项
+
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+				// 如果需要滚动条
+				scrollbar: {
+					el: '.swiper-scrollbar',
+				},
+			})
+		</script>
+		<br><br>
+		<div class="news w clearfix">
+			<div class="nav-news-list">
+				<a href="#" class="current">联系我们</a>
+			</div>
+			<div class="r-box">
+				<div class="current-location">
+					<b>当前位置：</b>
+					<a href="./index.html">主页</a>&nbsp;
+					<span>></span>&nbsp;
+					<a href="#">联系我们</a>
+				</div>
+				<div class="newsLists ">
+					<div class="contact-me">
+						<p id="title">重庆墨希科技有限公司</p>
+						<p id="content">公司邮箱：moxi@moxigroup.com</p>
+						<p id="content">公司地址：重庆市九龙坡区金凤电子信息产业园区2期8号楼</p>
+					</div>
+					<div class="contact-me">
+						<p id="title">石墨烯薄膜业务联系电话</p>
+						<p id="content">座机：023-68058666</p>
+					</div>
+					<div class="contact-me">
+						<p id="title">电子书、手机业务联系电话</p>
+						<p id="content">座机：023-68050720</p>
+					</div>
+					<div class="contact-me">
+						<img src="./img/location.png" width="700px">
+					</div>
+				</div>
+				<br><br>
+			</div>
+		</div>
+		<!-- 创建footer -->
+		<div class="footer clearfix">
+			<div class="footerContent w">
+				<p class="copy">重庆墨希科技有限公司版权所有&nbsp;&nbsp; 渝ICP备13002694号-8</p>
+				<p class="copy"> 地址：重庆高新区凤笙路15号附3号（重庆金凤电子信息产业园二期8号楼）联系电话：023-68050720 </p>
+				<p class="copy"> 渝公网安备 50010702502601号 </p>
+			</div>
+		</div>
+	</body>
+</html>

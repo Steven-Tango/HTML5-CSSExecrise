@@ -1,0 +1,111 @@
+.news .nav-news-list {
+	width: 250px;
+}
+
+.news .nav-news-list a {
+	display: block;
+	width: 100%;
+	height: 61px;
+	line-height: 3.8125rem;
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+	color: #5A7FA2;
+}
+
+.news .nav-news-list .current {
+	background-color: #277ab2;
+	color: #fff;
+}
+
+.news .nav-news-list a:hover {
+	background-color: #277ab2;
+	color: white;
+	transition: all .4s;
+}
+
+.news {
+	position: relative;
+}
+
+.news .r-box {
+	width: 930px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.news .r-box .current-location {
+	width: 250px;
+	margin: 10px 10px 0 600px;
+	text-align: center;
+}
+
+.news .r-box .current-location b {
+	font-size: 1.125rem;
+	font-family: '宋体';
+	color: #5A7FA2;
+}
+
+.news .r-box .current-location a,
+span {
+	color: #5A7FA2;
+	font-size: 1rem;
+}
+
+.news .r-box .newsLists {
+	margin-top: 0.625rem;
+	width: 100%;
+}
+
+.news .r-box .newsLists .clear {
+	width: 900px;
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.news .r-box .newsLists .clear h1 {
+	font-size: 15px;
+	font-family: '黑体';
+	margin-top: 14px;
+}
+
+.news .r-box .newsLists .clear h1 a {
+	color: black;
+}
+
+.news .r-box .newsLists .clear h1 a:hover {
+	color: red;
+}
+
+.news .r-box .newsLists .clear span {
+	display: block;
+	padding-top: 15px;
+}
+
+#fenye {
+	text-align: center;
+	/* margin: 0 auto; */
+	margin-left: -200px;
+}
+
+#fenye a {
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	padding: 0 5px;
+	color: #00F;
+	font-size: 18px;
+}
+
+#fenye .disabled {
+	border: 0;
+	color: #666;
+}
+
+#fenye .current {
+	color: #666;
+}
+
+#bottom {
+	background: #323232;
+}

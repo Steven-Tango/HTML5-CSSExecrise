@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>重庆墨希科技有限公司</title>
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/infoNews.css">
+		<link rel="stylesheet" href="./css/showProduct.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./fontawsome/css/all.css">
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+		<script src="./js/jquery-1.11.3.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<!-- 创建头部 -->
+		<div class="w header">
+			<div class="logo">
+				<img src="./img/logo.png">
+			</div>
+			<div class="contact">
+				<i class="fontStyle">终端产品</i>
+				<i class="number">023-68050720</i>
+				&nbsp;&nbsp;
+				<i class="fontStyle">材料器件</i>
+				<i class="number">023-68058666</i>
+			</div>
+			<div class="fs">
+				<a href="#" class="iconFont">
+					<i class="fas fa-cart-arrow-down"></i>
+				</a>
+				<a href="#" class="iconFont">
+					<i class="fas fa-cart-arrow-down"></i>
+				</a>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="nav">
+			<div class="w navBar">
+				<ul class="navList">
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./about.html">关于我们</a></li>
+					<li><a href="#">团队风采</a></li>
+					<li><a href="./showProduct.html">产品展示</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">在线学习</a></li>
+					<li><a href="#">新闻资讯</a></li>
+					<li><a href="#">招纳贤士</a></li>
+					<li><a href="./contact.html">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 创建banner容器 -->
+		<div class="swiper w">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide w"><a href="#"><img src="./img/banner.png" width="1200px"></a></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+			<!-- 如果需要导航按钮 -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<script>
+			var mySwiper = new Swiper('.swiper', {
+				autoplay: true,
+				loop: true, // 循环模式选项
+		
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+				},
+		
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+		
+				// 如果需要滚动条
+				scrollbar: {
+					el: '.swiper-scrollbar',
+				},
+			})
+		</script>
+		<br><br>
+		<div class="main w">
+			<div class="main-title">
+				<h1>共克时艰，守护天使！</h1>
+			</div>
+			<br>
+			<div class="make">
+				<p>作者：重庆墨希科技有限公司</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<p>浏览次数：1263 </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<p>发布日期：2019-12-22</p>
+			</div>
+			<br>
+			<div class="product-intro">
+				<p>&nbsp;&nbsp;2020年3月10日，我国在新型冠状病毒防疫工作中取得了阶段性的胜利，习主席发表了关心爱护医护人员的暖心讲话。
+				为了表达墨希人对抗疫一线最美逆行者的敬意，重庆墨希科技有限公司在控股股东华丽家族（股票代码600503）
+				于2月4日已捐赠现金600万元的前提下，适时地通过金凤电子信息产业园向高新区、九龙坡区部分医院捐赠数百台“若水石墨烯嫩护肤仪”，
+				以期对援鄂归来的白衣天使因长期佩戴防护用品对脸部产生的压痕及炎症能起到良好恢复、护理作用并拾美丽容颜。
+				</p>
+				<p class="center">
+					<img src="./img/news1.jpg" width="500px">
+				</p>
+				<p class="center">整装待发的“若水石墨烯嫩肤仪”</p>
+				<p class="center">
+					<img src="./img/news2.jpg" width="500px">
+				</p>
+				<p class="center">重庆市九龙坡区人民医院捐赠现场</p>
+				<p class="center">
+					<img src="./img/news3.jpg" width="500px">
+				</p class="center">
+				<p class="center">重庆市红十字医院捐赠现场</p>
+				<br><br>
+				<p class="read">延伸阅读：</p>
+				<p id="read">&nbsp;&nbsp;石墨烯嫩肤仪将单层石墨烯材料运用其中，通电后产生的远红外生命光波可以深入皮肤和皮下组织，
+				促进血液循环，活化组织细胞，立即修复受损肌肤，具有消炎祛痘、抚平细纹、排毒养颜、深层清洁、美白嫩肤等功效。
+				</p>
+			</div>
+			
+		</div>
+		<!-- 创建footer -->
+		<div class="footer">
+			<div class="footerContent w">
+				<p class="copy">重庆墨希科技有限公司版权所有&nbsp;&nbsp; 渝ICP备13002694号-8</p>
+				<p class="copy"> 地址：重庆高新区凤笙路15号附3号（重庆金凤电子信息产业园二期8号楼）联系电话：023-68050720 </p>
+				<p class="copy"> 渝公网安备 50010702502601号 </p>
+			</div>
+		</div>
+	</body>
+</html>
